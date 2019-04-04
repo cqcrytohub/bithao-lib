@@ -54204,7 +54204,7 @@ module.exports={
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/yangcoin/yangcore-lib.git"
+        "url": "https://github.com/cqcrytohub/bithao-lib.git"
     },
     "browser": {
         "request": "browser-request"
