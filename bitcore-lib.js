@@ -9752,9 +9752,7 @@ Transaction.prototype.fromBufferReader = function(reader) {
     this.version = reader.readInt32LE();
     if (this.network && this.network.txtimestamp) {
         this.ntime = reader.readUInt32LE();
-    } else {
-        console.log("no networks.... ");
-    }
+    } 
     sizeTxIns = reader.readVarintNum();
     for (i = 0; i < sizeTxIns; i++) {
         var input = Input.fromBufferReader(reader);
@@ -54170,7 +54168,7 @@ exports.createContext = Script.createContext = function (context) {
 module.exports={
     "name": "bitcore-lib",
     "version": "0.14.1",
-    "description": "A pure and powerful JavaScript Bitcoin library",
+    "description": "A pure and powerful JavaScript Bitcoin library for bitChk-wallet.",
     "author": "BitPay <dev@bitpay.com>",
     "support": "dev@yangchigi.com",
     "main": "index.js",
